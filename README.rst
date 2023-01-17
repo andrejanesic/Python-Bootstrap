@@ -22,6 +22,8 @@ Simply copy ``start.py`` into your project directory and execute with Python:
 
 Follow the provided steps to complete your project setup.
 
+*#TODO explain project structure, etc.*
+
 Authors
 -------
 
