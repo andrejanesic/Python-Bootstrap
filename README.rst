@@ -24,3 +24,14 @@ Follow the provided steps to complete your project setup.
 
 Authors
 -------
+
+[![Author](https://andrejanesic.com/git-signature-sm.png)](https://github.com/andrejanesic)
+
+References
+----------
+
+This project is based on the following projects, research, documents, etc:
+
+- `Reitz, K et al. The Hitchhiker's Guide to Python - Structuring Your Project. https://docs.python-guide.org/writing/structure/ (Accessed Jan 2023) <https://docs.python-guide.org/writing/structure/>`__
+
+- `Reitz, K et al. "setup.py (for humans)". (Accessed Jan 2023)<https://github.com/kennethreitz/setup.py>`__
