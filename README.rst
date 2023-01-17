@@ -25,7 +25,14 @@ Follow the provided steps to complete your project setup.
 Authors
 -------
 
-[![Author](https://andrejanesic.com/git-signature-sm.png)](https://github.com/andrejanesic)
+.. image:: https://andrejanesic.com/git-signature-sm.png
+    :width: 359
+    :alt: Andreja Nesic
+
+| **Andreja Nesic** \[`LinkedIn <https://www.linkedin.com/in/andreja-nesic/>`__\]
+| Comp Sci Undergrad @ `School of Computing, Belgrade <https://www.linkedin.com/school/racunarski-fakultet/>`__
+| office@andrejanesic.com
+| anesic3119rn@raf.rs
 
 References
 ----------
