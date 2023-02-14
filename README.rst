@@ -39,9 +39,9 @@ Follow the provided steps to complete your project setup.
 
 Project Structure
 -----------------
-The following project structure is setup by Python 🚀 Bootstrap::
 
-.. code-block:: none
+..  code-block:: none
+    :caption: Directory tree of your new project
 
     package_name/ ......... The main module of your program. Write your code here.
         __init__.py ....... Initializes the module. Export your .py files here.
