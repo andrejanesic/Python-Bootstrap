@@ -39,24 +39,22 @@ Follow the provided steps to complete your project setup.
 
 Project Structure
 -----------------
-::
-    package_name/ .......... The main module of your program. Write your code here.
-        __init__.py ........ Initializes the module. Export your .py files here.
-        __main__.py ........ Module's main script.
-        core.py ............ Write your program here. You may also create additional
-                             script files and subdirectories here.
-    tests/ ................. The test suite of your project.
-        __init__.py ........ Initializes the test module.
-        __main__.py ........ Runs the tests.
-        test_basic.py ...... An example test script. You may also create additional
-                             test scripts here.
-    .gitignore ............. Basic gitignore, automatically ignores venv dir.
-    make.bat ............... The Make scripts for testing, running and building your
-    Makefile ............... project. Extend the scripts to your specific needs.
-    MANIFEST.in ............ Specifies which files to include in source distribution.
-    README.rst ............. Auto-generated README.
-    requirements.txt ....... File to place your pip requirements.
-    setup.py ............... Auto-generated based on project info.
+The following project structure is setup by Python 🚀 Bootstrap::
+    package_name/ ......... The main module of your program. Write your code here.
+     | __init__.py ........ Initializes the module. Export your .py files here.
+     | __main__.py ........ Module's main script.
+     | core.py ............ Write your program here. You may also create additional script files and subdirectories here.
+    tests/ ................ The test suite of your project.
+     | __init__.py ........ Initializes the test module.
+     | __main__.py ........ Runs the tests.
+     | test_basic.py ...... An example test script. You may also create additional test scripts here.
+    .gitignore ............ Basic gitignore, automatically ignores venv dir.
+    make.bat .............. The Make scripts for testing, running and building your
+    Makefile .............. project. Extend the scripts to your specific needs.
+    MANIFEST.in ........... Specifies which files to include in source distribution.
+    README.rst ............ Auto-generated README.
+    requirements.txt ...... File to place your pip requirements.
+    setup.py .............. Auto-generated based on project info.
 
 Authors
 -------
