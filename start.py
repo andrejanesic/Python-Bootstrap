@@ -545,7 +545,7 @@ def parse_args() -> None:
     global args
 
     parser = argparse.ArgumentParser(
-        prog="Python-Pip-Make-Starter",
+        prog="Python-Bootstrap",
         description="Quickly set up your Python project",
     )
 

@@ -1,9 +1,9 @@
 Python 🚀 Bootstrap
 =======================
 
-Unix: ``curl -o start.py https://github.com/andrejanesic/Python-Pip-Make-Starter/start.py | python -``
+Unix: ``curl -o start.py https://github.com/andrejanesic/Python-Bootstrap/start.py | python -``
 
-Windows: ``(Invoke-WebRequest -Uri https://github.com/andrejanesic/Python-Pip-Make-Starter/start.py -UseBasicParsing).Content | python -``
+Windows: ``(Invoke-WebRequest -Uri https://github.com/andrejanesic/Python-Bootstrap/start.py -UseBasicParsing).Content | python -``
 
 Follow the setup wizard and you'll have a working Python project in seconds.
 
@@ -29,11 +29,11 @@ Simply copy ``start.py`` into your project directory and execute with Python:
 
 **Unix:**
 
-``curl -o start.py https://github.com/andrejanesic/Python-Pip-Make-Starter/start.py | python -``
+``curl -o start.py https://github.com/andrejanesic/Python-Bootstrap/start.py | python -``
 
 **Windows:**
 
-``(Invoke-WebRequest -Uri https://github.com/andrejanesic/Python-Pip-Make-Starter/start.py -UseBasicParsing).Content | python -``
+``(Invoke-WebRequest -Uri https://github.com/andrejanesic/Python-Bootstrap/start.py -UseBasicParsing).Content | python -``
 
 Follow the provided steps to complete your project setup.
 
