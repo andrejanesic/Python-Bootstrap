@@ -1,28 +1,62 @@
-Python-Pip-Make Starter
+Python 🚀 Bootstrap
 =======================
 
-Tired of creating new Python projects by hand?
+Unix: ``curl -o start.py https://github.com/andrejanesic/Python-Pip-Make-Starter/start.py | python -``
 
-Never set up another Python project by hand.
+Windows: ``(Invoke-WebRequest -Uri https://github.com/andrejanesic/Python-Pip-Make-Starter/start.py -UseBasicParsing).Content | python -``
 
-Python-Pip-Make Starter has you covered!
+Follow the setup wizard and you'll have a working Python project in seconds.
 
-How to use?
+What is Python 🚀 Bootstrap?
+----------------------------
+
+Creating Python projects by hand can be difficult and complex.
+
+How do you structure your project? Which package manager to use? And what about build scripts?
+
+That's where **Python 🚀 Bootstrap** comes into play.
+
+Python 🚀 Bootstrap helps you set up a new Python project in seconds.
+
+From ``setup.py`` to test module, from ``.gitignore`` to ``Make``, Python 🚀 Bootstrap builds everything for you.
+
+Just follow the setup wizard, and you'll get a fully-working Python 3 project in less than a minute.
+
+How to Use?
 -----------
 
 Simply copy ``start.py`` into your project directory and execute with Python:
 
-**Terminal:**
+**Unix:**
 
 ``curl -o start.py https://github.com/andrejanesic/Python-Pip-Make-Starter/start.py | python -``
 
-**Powershell:**
+**Windows:**
 
 ``(Invoke-WebRequest -Uri https://github.com/andrejanesic/Python-Pip-Make-Starter/start.py -UseBasicParsing).Content | python -``
 
 Follow the provided steps to complete your project setup.
 
-*#TODO explain project structure, etc.*
+Project Structure
+-----------------
+::
+    package_name/ .......... The main module of your program. Write your code here.
+        __init__.py ........ Initializes the module. Export your .py files here.
+        __main__.py ........ Module's main script.
+        core.py ............ Write your program here. You may also create additional
+                             script files and subdirectories here.
+    tests/ ................. The test suite of your project.
+        __init__.py ........ Initializes the test module.
+        __main__.py ........ Runs the tests.
+        test_basic.py ...... An example test script. You may also create additional
+                             test scripts here.
+    .gitignore ............. Basic gitignore, automatically ignores venv dir.
+    make.bat ............... The Make scripts for testing, running and building your
+    Makefile ............... project. Extend the scripts to your specific needs.
+    MANIFEST.in ............ Specifies which files to include in source distribution.
+    README.rst ............. Auto-generated README.
+    requirements.txt ....... File to place your pip requirements.
+    setup.py ............... Auto-generated based on project info.
 
 Authors
 -------
