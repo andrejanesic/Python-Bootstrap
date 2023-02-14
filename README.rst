@@ -74,7 +74,7 @@ Authors
 References
 ----------
 
-This project is based on the following projects, research, documents, etc:
+This project is based on the following references:
 
 - `Reitz, K et al. The Hitchhiker's Guide to Python - Structuring Your Project. https://docs.python-guide.org/writing/structure/ (Accessed Jan 2023) <https://docs.python-guide.org/writing/structure/>`__
 
