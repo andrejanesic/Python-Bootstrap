@@ -1,9 +1,9 @@
 Python 🚀 Bootstrap
 =======================
 
-Unix: ``curl -o start.py https://github.com/andrejanesic/Python-Bootstrap/start.py | python -``
+Unix: ``curl -o start.py https://raw.githubusercontent.com/andrejanesic/Python-Bootstrap/main/start.py && python start.py``
 
-Windows: ``(Invoke-WebRequest -Uri https://github.com/andrejanesic/Python-Bootstrap/start.py -UseBasicParsing).Content | python -``
+Windows: ``Invoke-WebRequest -Uri https://raw.githubusercontent.com/andrejanesic/Python-Bootstrap/main/start.py -OutFile start.py; python start.py``
 
 Follow the setup wizard and you'll have a working Python project in seconds.
 

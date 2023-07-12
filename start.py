@@ -60,20 +60,20 @@ setup(
 )"""
 
 TEMPLATE_MAKEFILE = """init:
-    python -m venv env
-    ./env/Scripts/activate
+    python -m venv venv
+    ./venv/Scripts/activate
 	pip install -r requirements.txt
 
 dev:
-    ./env/Scripts/activate
+    ./venv/Scripts/activate
     python -m %s
 
 test:
-    ./env/Scripts/activate
+    ./venv/Scripts/activate
     python -m tests
 
 build:
-    ./env/Scripts/activate
+    ./venv/Scripts/activate
     python setup.py sdist"""
 
 TEMPLATE_MAKE_BAT = """@ECHO OFF
@@ -82,29 +82,29 @@ if "%%1" == "" goto init
 
 if "%%1" == "init" (
 	:init
-    python -m venv env
-    call .\\env\\Scripts\\activate.bat
+    python -m venv venv
+    call .\\venv\\Scripts\\activate.bat
 	pip install -r requirements.txt
 	goto end
 )
 
 if "%%1" == "dev" (
 	:init
-    call .\\env\\Scripts\\activate.bat
+    call .\\venv\\Scripts\\activate.bat
 	python -m %s
 	goto end
 )
 
 if "%%1" == "test" (
 	:init
-    call .\\env\\Scripts\\activate.bat
+    call .\\venv\\Scripts\\activate.bat
 	python -m tests
 	goto end
 )
 
 if "%%1" == "build" (
 	:init
-    call .\\env\\Scripts\\activate.bat
+    call .\\venv\\Scripts\\activate.bat
 	python setup.py sdist
 	goto end
 )
@@ -401,7 +401,7 @@ def build_manifest(files: list = ["LICENSE", "README.rst"]):
 
     content = ""
     for f in files:
-        content += f"{f}\n"
+        content += f"include {f}\n"
     content = content.strip()
     write_file("./MANIFEST.in", content)
 
@@ -431,7 +431,7 @@ def build_setup(
     """
 
     def formatted(inp: str, keyword: str, dflt: str = ""):
-        if not inp:
+        if not inp or len(inp) == 0:
             return dflt
         else:
             return f"{keyword}='{inp}',\n\t"
@@ -444,7 +444,7 @@ def build_setup(
     author = formatted(author, "author")
     author_email = formatted(author_email, "author_email")
     url = formatted(url, "url")
-    python_requires = formatted(python_requires, ">=3.7.0")
+    python_requires = formatted(python_requires, "python_requires", ">=3.7.0")
 
     content = TEMPLATE_SETUP % (package, version, description, author, author_email, url, python_requires)
 
@@ -508,19 +508,19 @@ def build_all(
     build_makefiles(package)
     build_manifest()
     build_readme(
-        name,
-        description,
-        author,
-        author_email
+        name=name,
+        description=description,
+        author=author,
+        author_email=author_email
     )
     build_setup(
-        package,
-        version,
-        description,
-        python_requires,
-        author,
-        author_email,
-        url
+        package=package,
+        version=version,
+        description=description,
+        python_requires=python_requires,
+        author=author,
+        author_email=author_email,
+        url=url
     )
     build_requirements()
     build_gitignore()
@@ -644,7 +644,7 @@ def main() -> None:
 
     author = args.author
     if not author:
-        author = query("Author (empty): ", r"^.*$", "")
+        author = query("Author name (empty): ", r"^.*$", "")
 
     author_email = args.author_email
     if not author_email:
@@ -660,14 +660,14 @@ def main() -> None:
             "Requires Python (>=3.7.0): ", r"^.+$", ">=3.7.0")
 
     build_all(
-        name,
-        package,
-        version,
-        description,
-        author,
-        author_email,
-        url,
-        python_requires
+        name=name,
+        package=package,
+        version=version,
+        description=description,
+        author=author,
+        author_email=author_email,
+        url=url,
+        python_requires=python_requires
     )
 
     if not os.path.exists("./LICENSE"):
